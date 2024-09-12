@@ -1,158 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-.w3-sidebar {
-  z-index: 3;
-  width: 250px;
-  top: 43px;
-  bottom: 0;
-  height: inherit;
-}
-</style>
-</head>
-<body>
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Home</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a>
-  </div>
-</div>
-
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
-  <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Typescript Tutorial</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">About Typescript</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">JS vs TS</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">JS to TS Project</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Useful Links</a>
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Typescript Tutorial</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
-
-  <div class="w3-row">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">About Typescript</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">JS vs TS</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">JS to TS Project</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
-
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Useful Links</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="w3-third w3-container">
-      <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
-      <p class="w3-border w3-padding-large w3-padding-64 w3-center">AD</p>
-    </div>
-  </div>
-
-
-
-  <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32">
-      <h4>Footer</h4>
+  <head>
+    <title>TypeScript Tutorial</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/programming-language.png"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/lib/w3-theme-black.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      html,
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Roboto", sans-serif;
+      }
+      .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+      }
+      pre {
+        background-color: #f4f4f4;
+        padding: 10px; 
+        border: 1px solid #ddd; 
+        overflow-x: auto;
+      }
+      code {
+        font-family: "Courier New", Courier, monospace;
+      }
+      .ad {
+        background-color: #009688;
+        padding: 10px;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+        <a
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1"
+          href="javascript:void(0)"
+          onclick="w3_open()"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="#" class="w3-bar-item w3-button w3-theme-l1">Home</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+          >Sign Up</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+          >Log In</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+          >Contact</a>
+        <a
+          href="#"
+          class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white"
+          >Lessons</a>
+        <a
+          href="#"
+          class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white"
+          >Partners</a
+        >
+      </div>
     </div>
 
-    <div class="w3-container w3-theme-l1">
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <!-- Sidebar -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large"
+        title="Close Menu"
+      >
+        <i class="fa fa-remove"></i>
+      </a>
+      <h4 class="w3-bar-item"><b>Menu</b></h4>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#one"
+        >So You Want To Learn TypeScript?</a
+      >
+      <a class="w3-bar-item w3-button w3-hover-black" href="#about"
+        >About TypeScript</a
+      >
+      <a class="w3-bar-item w3-button w3-hover-black" href="#basic"
+      >Basic TypeScript</a
+      >
+    <a class="w3-bar-item w3-button w3-hover-black" href="#setting-up"
+    >Setting up a TypeScript project</a
+      >
+      <a class="w3-bar-item w3-button w3-hover-black" href="#jsvsts">JS vs TS</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#project"
+        >JS to TS Project</a
+      >
+      <a class="w3-bar-item w3-button w3-hover-black" href="#links">Useful Links</a>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div
+      class="w3-overlay w3-hide-large"
+      onclick="w3_close()"
+      style="cursor: pointer"
+      title="close side menu"
+      id="myOverlay"
+    ></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left: 250px">
+      <div class="w3-row w3-padding-64" id="one">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">So You Want To Learn TypeScript?</h1>
+          <p>
+            Hello colleague, and welcome to the TypeScript tutorial!
+          <br>
+            In this tutorial, we'll explore the fundamentals of
+            TypeScript step-by-step.
+          </p>
+          <p>  
+            This guide will provide you with a solid
+            foundation in TypeScript. We'll cover the core concepts, syntax, and
+            features that make TypeScript such a valuable tool in modern web
+            development, and the differences between it and JavaScript.
+          </p>
+          <p>
+            What you'll learn:
+            <ul>
+              <li>What is TypeScript?</li>
+              <li>Why use TypeScript?</li>
+              <li>How to set up a TypeScript project</li>
+              <li>Basic TypeScript syntax</li>
+              <li>Differences between TypeScript and JavaScript</li>
+              <li>How to convert a JavaScript project to TypeScript</li>
+              <li>Useful links and resources</li>
+            </ul>
+          </p>
+
+          <p>
+            Since the expectation is that you are already comfortable and have plenty of experience with JavaScript, we'll jump straight into the TypeScript tutorial below. If you're new to JavaScript, you may want to start with a JavaScript tutorial first to get a better understanding of the basics.
+          </p>
+        </div>
+        <div class="w3-third w3-container">
+          <p class="w3-border w3-padding-large w3-padding-32 w3-center ad">Pretend there is an advertisement here</p>
+          <p class="w3-border w3-padding-large w3-padding-64 w3-center ad">Pretend there is an advertisement here</p>
+        </div>
+      </div>
+
+      <div class="w3-row w3-padding-64" id="about">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">About TypeScript</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+        </div>
+        <div class="w3-third w3-container">
+          <p class="w3-border w3-padding-large w3-padding-32 w3-center ad">Pretend there is an advertisement here</p>
+          <p class="w3-border w3-padding-large w3-padding-64 w3-center ad">Pretend there is an advertisement here</p>
+        </div>
+      </div>
+
+      <div class="w3-row w3-padding-64" id="basic">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">Basic TypeScript</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+          <pre><code>
+                let name: string = "John";
+          </code></pre>
+        </div>
+        <div class="w3-third w3-container">
+          <p class="w3-border w3-padding-large w3-padding-32 w3-center ad">Pretend there is an advertisement here</p>
+          <p class="w3-border w3-padding-large w3-padding-64 w3-center ad">Pretend there is an advertisement here</p>
+        </div>
+      </div>
+
+      <div class="w3-row w3-padding-64" id="setting-up">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">Setting up a TypeScript project</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+        </div>
+        <div class="w3-third w3-container">
+          <p class="w3-border w3-padding-large w3-padding-32 w3-center ad">Pretend there is an advertisement here</p>
+          <p class="w3-border w3-padding-large w3-padding-64 w3-center ad">Pretend there is an advertisement here</p>
+        </div>
+      </div>
+
+      <div class="w3-row w3-padding-64" id="jsvsts">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">JS vs TS</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+        </div>
+        <div class="w3-third w3-container">
+          <p class="w3-border w3-padding-large w3-padding-32 w3-center ad">Pretend there is an advertisement here</p>
+          <p class="w3-border w3-padding-large w3-padding-64 w3-center ad">Pretend there is an advertisement here</p>
+        </div>
+      </div>
+
+      <div class="w3-row w3-padding-64" id="project">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">JS to TS Project</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+        </div>
+        <div class="w3-third w3-container">
+          <p class="w3-border w3-padding-large w3-padding-32 w3-center ad">Pretend there is an advertisement here</p>
+          <p class="w3-border w3-padding-large w3-padding-64 w3-center ad">Pretend there is an advertisement here</p>
+        </div>
+      </div>
+
+      <div class="w3-row w3-padding-64" id="links">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">Useful Links</h1>
+          <p>
+            While this tutorial will provide you with a solid foundation in TypeScript, there are many other resources available to help you learn if you get stuck or just want to learn more. Here are a few useful links to get you started:
+          </p>
+          <p>
+            <ul>
+              <li>
+                <a href="https://www.codecademy.com/learn/learn-typescript" target="_blank">Codecademy Lessions</a> - Learn TypeScript with Codecademy's interactive lessons.
+              </li>
+              <li>
+                <a href="https://www.typescriptlang.org/docs/" target="_blank">TypeScript Documentation</a> - Official TypeScript documentation.
+              </li>
+              <li>
+                <a href="?" target="_blank">?</a> - ?.
+              </li>
+              <li>
+                <a href="?" target="_blank">?</a> - ?.
+              </li>
+              <li>
+                <a href="?" target="_blank">?</a> - ?.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div class="w3-third w3-container">
+          <p class="w3-border w3-padding-large w3-padding-32 w3-center ad">Pretend there is an advertisement here</p>
+          <p class="w3-border w3-padding-large w3-padding-64 w3-center ad">Pretend there is an advertisement here</p>
+        </div>
+      </div>
+
+      <footer id="myFooter">
+        <div class="w3-container w3-theme-l2 w3-padding-32">
+          <h4>TypeScript Tutorial</h4>
+          <p>footer text</p>
+          <p>blah</p>
+          <p>blah</p>
+          <p>blah</p>
+        </div>
+
+        <div class="w3-container w3-theme-l1">
+          <p>
+            Powered by
+            <a
+              href="https://www.dominos.co.uk/"
+              target="_blank"
+              >pizza</a
+            >
+          </p>
+        </div>
+      </footer>
+
+      <!-- END MAIN -->
     </div>
-  </footer>
 
-<!-- END MAIN -->
-</div>
+    <script>
+      // Get the Sidebar
+      var mySidebar = document.getElementById("mySidebar");
 
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
+      // Get the DIV with overlay effect
+      var overlayBg = document.getElementById("myOverlay");
 
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
+      // Toggle between showing and hiding the sidebar, and add overlay effect
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+          overlayBg.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+          overlayBg.style.display = "block";
+        }
+      }
 
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
-  } else {
-    mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-}
-</script>
-
-</body>
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+      }
+    </script>
+  </body>
 </html>
