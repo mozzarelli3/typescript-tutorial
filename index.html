@@ -38,7 +38,7 @@
       }
       pre {
         background-color: #f4f4f4;
-        padding: 10px; 
+        padding: 2px; 
         border: 1px solid #ddd; 
         overflow-x: auto;
       }
@@ -197,9 +197,54 @@
             exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat.
           </p>
+          <h4>Basic Types</h4>
+          <p>TypeScript allows you to define types for variables.</p>
+          <p>examples:</p>
           <pre><code>
-                let name: string = "John";
+            let message: string = 'Hello, TypeScript!';
+            let count: number = 5;
+            let isActive: boolean = true;
           </code></pre>
+
+          <h4>Functions</h4>
+          <p>You can define functions with type annotations to specify the types of parameters and return values.</p>
+          <p>examples:</p>
+          <pre><code>
+            function add(a: number, b: number): number {
+              return a + b;
+            }
+            let result: number = add(3, 5);
+          </code></pre>
+
+          <h4>Interfaces</h4>
+          <p>Interfaces define the shape of objects.</p>
+          <p>examples:</p>
+          <pre><code>
+            interface Person {
+              name: string;
+              age: number;
+            }
+            let person: Person = { name: 'Eleanor', age: 25 };
+          </code></pre>
+
+          <h4>Classes</h4>
+          <p>TypeScript supports classes and object-oriented programming.</p>
+          <p>examples:</p>
+          <pre><code>
+            class Animal {
+              name: string;
+              constructor(name: string) {
+                this.name = name;
+              }
+              speak() {
+                console.log(this.name + ' makes a noise.');
+              }
+            }
+            let cat = new Animal('Kitty');
+            cat.speak();
+          </code></pre>
+
+
         </div>
         <div class="w3-third w3-container">
           <p class="w3-border w3-padding-large w3-padding-32 w3-center ad">Pretend there is an advertisement here</p>
@@ -282,7 +327,7 @@
                 <a href="https://www.typescriptlang.org/docs/" target="_blank">TypeScript Documentation</a> - Official TypeScript documentation.
               </li>
               <li>
-                <a href="?" target="_blank">?</a> - ?.
+                <a href="https://www.w3schools.com/typescript/index.php" target="_blank">W3Schools TypeScript Tutorial</a> - TypeScript tutorial on W3Schools.
               </li>
               <li>
                 <a href="?" target="_blank">?</a> - ?.
