@@ -217,6 +217,8 @@
             Below are some basic TypeScript concepts to get you started. We'll cover types, functions, interfaces, and classes.
           </p>
           <br>
+
+
           <h4>Basic Types</h4>
           <p>TypeScript allows you to define types for variables.</p>
           <p>Examples:</p>
@@ -226,6 +228,8 @@
             let isActive: boolean = true;
           </code></pre>
           <br>
+
+
           <h4>Functions</h4>
           <p>You can define functions with type annotations to specify the types of parameters and return values.</p>
           <p>Example:</p>
@@ -235,9 +239,19 @@
             }
             let result: number = add(3, 5);
           </code></pre>
+          <p>
+            <ul>
+                <li>add: This is the name of the function. It's used to call or invoke the function.</li>
+                <li>a: number: The first parameter a is of type number. This means a must be a number when the function is called.</li>
+                <li>b: number: The second parameter b is also of type number. Similarly, b must be a number.</li>
+                <li>: number: This specifies the return type of the function. The function will return a value of type number.</li>
+                <li>{ return a + b; }: This is the code inside the function. It adds the two parameters a and b and returns the result.</li>
+              </ul>
+              </p>
           <br>
+
           <h4>Interfaces</h4>
-          <p>Interfaces define the shape of objects.</p>
+          <p>An interface defines a blueprint for objects. It describes the shape of an object, including the properties it must have and their types. Think of it as a template or a contract that objects must follow.</p>
           <p>Example:</p>
           <pre><code>
             interface Person {
@@ -246,10 +260,20 @@
             }
             let person: Person = { name: 'Eleanor', age: 25 };
           </code></pre>
+          <p>In this example:
+            <ul>
+              <li>Person is the name of the interface.</li>
+              <li>It requires any object that implements it to have a name property of type string.</li>
+              <li>It requires an age property of type number.</li>
+            </ul>
+          </p>
           <br>
+
+
           <h4>Classes</h4>
-          <p>TypeScript supports classes and object-oriented programming.</p>
-          <p>TypeScript checks that name is always a string. If you try to create an Animal with a non-string name, or assign a non-string value to name, TypeScript will report an error at compile time.</p>
+          <p>
+            A class in TypeScript is a blueprint for creating objects with predefined properties and methods. It helps you group related data and functions together, making it easier to manage and use them.
+          </p>
           <p>Example:</p>
           <pre><code>
             class Animal {
@@ -267,7 +291,7 @@
 
             --- Console log output: Kitty makes a noise. ---
           </code></pre>
-
+          <p>TypeScript checks that name is always a string. If you try to create an Animal with a non-string name, or assign a non-string value to name, TypeScript will report an error at compile time.</p>
 
         </div>
         <div class="w3-third w3-container">
@@ -407,7 +431,7 @@
           </p>
           <br>
           <h4>Array Types</h4>
-            <p>JavaScript</p>
+            <p>JavaScript:</p>
             <pre><code>
               const numbers = [1, 2, 3];
               numbers.push("four");
@@ -417,7 +441,7 @@
 
               --- Console log output: [1, 2, 3, "four"] --- 
             </code></pre>
-            <p>TypeScript</p>
+            <p>TypeScript:</p>
             <pre><code>
               const numbers: number[] = [1, 2, 3];
               numbers.push("four");
@@ -434,7 +458,7 @@
             </p>
             <br>
             <h4>Object Properties</h4>
-            <p>JavaScript</p>
+            <p>JavaScript:</p>
             <pre><code>
               const user = {
                 name: "Eleanor",
@@ -448,7 +472,7 @@
               1 -- Console log output: Eleanor
               2 -- Console log output: undefined
             </code></pre>
-            <p>TypeScript</p>
+            <p>TypeScript:</p>
             <pre><code>
               type User = {
                 name: string;
