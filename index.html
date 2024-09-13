@@ -108,7 +108,7 @@
     <a class="w3-bar-item w3-button w3-hover-black" href="#setting-up"
     >Setting up a TypeScript project</a
       >
-      <a class="w3-bar-item w3-button w3-hover-black" href="#jsvsts">JS vs TS</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#jsvsts">JavaScript vs TypeScript</a>
       <a class="w3-bar-item w3-button w3-hover-black" href="#project"
         >JS to TS Project</a
       >
@@ -132,8 +132,8 @@
           <p>
             Hello colleague, and welcome to the TypeScript tutorial!
           <br>
-            In this tutorial, we'll explore the fundamentals of
-            TypeScript step-by-step.
+            In this tutorial, we'll explore everything you need to know about the fundamentals of
+            TypeScript, step-by-step.
           </p>
           <p>  
             This guide will provide you with a solid
@@ -149,7 +149,7 @@
               <li>How to set up a TypeScript project</li>
               <li>Basic TypeScript syntax</li>
               <li>Differences between TypeScript and JavaScript</li>
-              <li>How to convert a JavaScript project to TypeScript</li>
+              <li>How to manually convert a JavaScript project to TypeScript</li>
               <li>Useful links and resources</li>
             </ul>
           </p>
@@ -168,14 +168,28 @@
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">About TypeScript</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            TypeScript is a programming language developed by Microsoft that extends JavaScript by adding
+             static types, making it easier to build large-scale applications with fewer errors. Created by Anders Hejlsberg 
+             (the architect of C#), TypeScript was first released in 2012 to address some of the shortcomings of JavaScript 
+             when used for complex applications.
+             <br><br>JavaScript is a dynamic language, meaning variables and functions can accept 
+             any type of data, which can lead to unexpected errors and bugs. TypeScript introduces a type system that allows 
+             developers to explicitly define types for variables, function parameters, and return values, providing more 
+             predictability and safety in the code.
+            <br><br>
+            The main goal of TypeScript is to enhance the developer experience by providing tools for better code organization,
+             readability, and maintainability, especially in large projects where JavaScript alone can become difficult to manage. 
+             TypeScript compiles to plain JavaScript, which means it can run in any environment that supports JavaScript, such 
+             as web browsers and Node.js. <br><br>Over the years, TypeScript has gained significant popularity in the development 
+             community due to its ability to catch errors early, support modern JavaScript features (like ES6 and beyond), 
+             and integrate seamlessly with popular development tools like Visual Studio Code.
+            <br><br>
+            TypeScript's growth has been fueled by the increasing complexity of web applications and the demand for more robust 
+            tooling around JavaScript. Major frameworks like Angular have adopted TypeScript as their primary language, and many 
+            other frameworks, such as React and Vue, offer first-class support for it.
+            <br><br>Today, TypeScript is widely used by 
+            developers and companies worldwide to build scalable, maintainable, and reliable applications, and it continues to 
+            evolve as a standard choice for JavaScript developers looking for better control and safety in their codebases.
           </p>
         </div>
         <div class="w3-third w3-container">
@@ -188,37 +202,40 @@
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">Basic TypeScript</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            TypeScript is a programming language that builds on JavaScript by adding static types, making it easier to catch errors
+            and write more reliable code. Think of it as a "superset" of JavaScript, meaning it includes everything JavaScript can do,
+            but with some extra features.
+            <br><br>  
+            The most important feature is "type safety," which allows you to specify the types of
+            variables, function parameters, and return values, ensuring that your code behaves as expected. This is especially helpful
+            in large projects where understanding what kind of data is being used can be tricky. TypeScript code is then "transpiled"
+            into regular JavaScript so that it can run in any environment that supports JavaScript, like web browsers or Node.js.
+            <br><br>
+            Overall, TypeScript helps developers write cleaner, more maintainable code and catch mistakes early in the development process.
           </p>
+          <br>
           <h4>Basic Types</h4>
           <p>TypeScript allows you to define types for variables.</p>
-          <p>examples:</p>
+          <p>Examples:</p>
           <pre><code>
             let message: string = 'Hello, TypeScript!';
             let count: number = 5;
             let isActive: boolean = true;
           </code></pre>
-
+          <br>
           <h4>Functions</h4>
           <p>You can define functions with type annotations to specify the types of parameters and return values.</p>
-          <p>examples:</p>
+          <p>Example:</p>
           <pre><code>
             function add(a: number, b: number): number {
               return a + b;
             }
             let result: number = add(3, 5);
           </code></pre>
-
+          <br>
           <h4>Interfaces</h4>
           <p>Interfaces define the shape of objects.</p>
-          <p>examples:</p>
+          <p>Example:</p>
           <pre><code>
             interface Person {
               name: string;
@@ -226,10 +243,11 @@
             }
             let person: Person = { name: 'Eleanor', age: 25 };
           </code></pre>
-
+          <br>
           <h4>Classes</h4>
           <p>TypeScript supports classes and object-oriented programming.</p>
-          <p>examples:</p>
+          <p>TypeScript checks that name is always a string. If you try to create an Animal with a non-string name, or assign a non-string value to name, TypeScript will report an error at compile time.</p>
+          <p>Example:</p>
           <pre><code>
             class Animal {
               name: string;
@@ -242,6 +260,9 @@
             }
             let cat = new Animal('Kitty');
             cat.speak();
+
+
+            --- Console log output: Kitty makes a noise. ---
           </code></pre>
 
 
@@ -255,16 +276,82 @@
       <div class="w3-row w3-padding-64" id="setting-up">
         <div class="w3-twothird w3-container">
           <h1 class="w3-text-teal">Setting up a TypeScript project</h1>
+          <h4>Step 1 - Set Up Project Directory</h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            Create a new directory for your TypeScript project and navigate into it. You can do this using the terminal:
           </p>
+          <pre><code>
+            mkdir my-typescript-project
+            cd my-typescript-project
+          </code></pre>
+          <br>
+          <h4>Step 2 - Install Node.js and npm</h4>
+          <p>To check if you have Node.js and npm installed, run the following commands in your terminal or command prompt:</p>
+          <pre><code>
+            node -v
+            npm -v
+          </code></pre>
+          <p>
+            If you don't have Node.js and npm installed, you can download and install them from the official Node.js website.
+          </p>
+          <br>
+          <h4>Step 3 - Initialise package.json File</h4>
+          <p>
+            To initialise a new Node.js project, run the following command in your terminal:
+          </p>
+          <pre><code>
+            npm init -y
+          </code></pre>
+          <p>This will create a package.json file in your project directory with default settings.</p>
+          <br>
+          <h4>Step 4 - Install TypeScript and Initialise Config File</h4>
+          <p>To install TypeScript, run the following command in your terminal:</p>
+          <pre><code>
+            npm install typescript --save-dev
+          </code></pre>
+          <p>Next, you need to initialise a TypeScript configuration file by running:</p>
+          <pre><code>
+            npx tsc --init
+          </code></pre>
+          <br>
+          <h4>Step 5 - Create TypeScript File</h4>
+          <p>
+            Create a new TypeScript file in the Source folder in your project directory. The folder should be called "src", and the
+            TypeScript file should have a ".ts" extension.
+          </p>
+          <br>
+          <h4>Step 6 - Add Scripts to package.json</h4>
+          <p>
+            Open the package.json file in your project directory and add the following scripts to the "scripts" section:
+          </p>
+          <pre><code>
+            "scripts": {
+              "build": "tsc",
+              "start": "node dist/index.js",
+              "watch": "tsc --watch"
+            }
+          </code></pre>
+          <p>
+            <ul>
+              <li>npm run build - will compile the TypeScript files.</li>
+              <li>npm start - will run the compiled JavaScript.</li>
+              <li>npm run watch - watch will watch for file changes and recompile automatically.</li>
+            </ul>
+          </p>
+          <br>
+          <h4>Step 7 - Add Your Code</h4>
+          <p>
+            Write your TypeScript code in the TypeScript file you created earlier. You can use any text editor or IDE to write TypeScript code.
+          </p>
+          <br>
+          <h4>Step 8 - Run Your Code!</h4>
+          <p>
+            Run your code using the commands in Step 6. You should see the output of your TypeScript code in the terminal.
+          </p>
+          <pre><code>
+            npm run build
+            npm start
+          </code></pre>
         </div>
         <div class="w3-third w3-container">
           <p class="w3-border w3-padding-large w3-padding-32 w3-center ad">Pretend there is an advertisement here</p>
@@ -274,17 +361,110 @@
 
       <div class="w3-row w3-padding-64" id="jsvsts">
         <div class="w3-twothird w3-container">
-          <h1 class="w3-text-teal">JS vs TS</h1>
+          <h1 class="w3-text-teal">JavaScript vs TypeScript</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            JavaScript is a loosely typed language, which means it can be challenging to determine the types of data being used. In JavaScript, there is no built-in information about the types of function parameters or variables, so developers often have to rely on documentation or make educated guesses based on the code.
+            <br><br>
+            TypeScript, on the other hand, allows developers to explicitly define data types within their code. This feature helps catch errors when there is a mismatch between expected and actual types. For instance, TypeScript will throw an error if you try to pass a string to a function that expects a number, whereas JavaScript will not.
           </p>
+          <p>Here are some examples of the differences between JavaScript and TypeScript:</p>
+          <h4>Functions</h4>
+            <p>JavaScript:</p>
+            <pre><code>
+              function add(a, b) {
+                return a + b;
+              }
+              
+              console.log(add(5, 10));   -- 1 --
+              console.log(add("5", 10));   -- 2 --
+
+
+              1 -- Console log output: 15
+              2 -- Console log output: "510"
+            </code></pre>
+            <p>TypeScript:</p>
+            <pre><code>
+              function add(a: number, b: number): number {
+                return a + b;
+              }
+              
+              console.log(add(5, 10));    -- 1 --
+              console.log(add("5", 10));   -- 2 --
+
+
+              1 -- Console log output: 15
+              2 -- Error: Argument of type 'string' is not assignable to parameter of type 'number'.
+            </code></pre>
+          <p>
+            In JavaScript, the add function can accept any types for a and b. This can lead string concatenation instead of addition of the numerical values.
+            <br><br>
+            In TypeScript, the function specifies that a and b must be of type number. If you try to pass a string instead, TypeScript will report an error.
+          </p>
+          <h4>Array Types</h4>
+            <p>JavaScript</p>
+            <pre><code>
+              const numbers = [1, 2, 3];
+              numbers.push("four");
+
+              console.log(numbers);
+            
+
+              --- Console log output: [1, 2, 3, "four"] --- 
+            </code></pre>
+            <p>TypeScript</p>
+            <pre><code>
+              const numbers: number[] = [1, 2, 3];
+              numbers.push("four");
+
+              console.log(numbers);
+
+
+              --- Console log output: [1, 2, 3] ---
+            </code></pre>
+            <p>
+              JavaScript allows mixed types in an array without any warnings, potentially leading to unexpected behaviors.
+              <br><br>
+              TypeScript enforces that the numbers array should only contain numbers. Pushing a string to the array will result in a compile-time error.
+            </p>
+            <h4>Object Properties</h4>
+            <p>JavaScript</p>
+            <pre><code>
+              const user = {
+                name: "Eleanor",
+                age: 25,
+              };
+              
+              console.log(user.name);   -- 1 --
+              console.log(user.email);   -- 2 --
+              
+
+              1 -- Console log output: Eleanor
+              2 -- Console log output: undefined
+            </code></pre>
+            <p>TypeScript</p>
+            <pre><code>
+              type User = {
+                name: string;
+                age: number;
+              };
+              
+              const user: User = {
+                name: "Eleanor",
+                age: 25,
+              };
+              
+              console.log(user.name);   -- 1 --
+              console.log(user.email);   -- 2 --
+
+
+              1 -- Console log output: Eleanor
+              2 -- Console log output: Error: Property 'email' does not exist on type 'User'.
+            </code></pre>
+            <p>
+              JavaScript doesn't enforce any constraints on object properties, which can lead to accessing properties that don't exist without any errors.
+              <br><br>
+              TypeScript defines a User type with specific properties. Accessing a property that doesn't exist will cause a compile-time error.
+            </p>
         </div>
         <div class="w3-third w3-container">
           <p class="w3-border w3-padding-large w3-padding-32 w3-center ad">Pretend there is an advertisement here</p>
