@@ -454,7 +454,7 @@
             <p>
               JavaScript allows mixed types in an array without any warnings, potentially leading to unexpected behaviors.
               <br><br>
-              TypeScript enforces that the numbers array should only contain numbers. Pushing a string to the array will result in a compile-time error.
+              TypeScript enforces that the numbers array should only contain number elements. Attempting to push a string like "four" will result in a compile-time error: Argument of type 'string' is not assignable to parameter of type 'number'. Therefore, the code will not compile, and there will be no runtime output.
             </p>
             <br>
             <h4>Object Properties</h4>
